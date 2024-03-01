@@ -1,0 +1,46 @@
+package ngoding ;
+import java.util.ArrayList;
+public class hello {
+    public static void main(String[]args){
+        ArrayList<String> arrayList = new ArrayList<>();
+
+        // Menambahkan elemen ke ArrayList
+        arrayList.add("mangga");
+        arrayList.add("apel");
+        arrayList.add("anggur");
+
+        // Mengambil elemen dari ArrayList berdasarkan indeks
+        String a = arrayList.get(2);
+        System.out.println("Elemen ketiga: " + a);
+
+        // Mengganti elemen pada posisi tertentu dengan elemen baru
+        arrayList.set(0, "buah");
+
+        // Menghapus elemen dari ArrayList berdasarkan indeks
+        arrayList.remove(0);
+
+        // Mengembalikan jumlah elemen dalam ArrayList
+        int j = arrayList.size();
+        System.out.println("Jumlah elemen setelah perubahan: " + j);
+
+        // Memeriksa apakah ArrayList kosong
+        boolean i = arrayList.isEmpty();
+        System.out.println("Apakah ArrayList kosong? " + i);
+
+        // Memeriksa apakah ArrayList mengandung suatu objek tertentu
+        boolean mangga = arrayList.contains("mangga");
+        System.out.println("Apakah ArrayList mengandung 'Mangga'? " + mangga);
+
+        // Mengembalikan indeks pertama dari objek yang ditemukan dalam ArrayList
+        int mangga2 = arrayList.indexOf("mangga");
+        System.out.println("Indeks 'mangga' dalam ArrayList: " + mangga2);
+
+        // Menghapus semua elemen dari ArrayList
+        arrayList.clear();
+
+        // Mengonversi ArrayList menjadi array biasa
+        String[] array = arrayList.toArray(new String[0]);
+   
+    }
+
+}
